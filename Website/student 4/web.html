@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Music - Favourites</title>
+    <link rel="icon" type="image/png" href="..\student 2\Images/vinyl.png">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="external.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="fas fa-bars" id="menu-btn"></div>
+    <a href="menu.html" class="logo">
+        <img src="..\student 2\Images/vinyl.png" alt="icon" id="icon">
+        <span>AZ</span>Music
+    </a>
+    <div class="menu-overlay">
+        <nav class="navbar">
+            <a href="..\student 2\menu.html">Home</a>
+            <a href="..\student 4\web.html" id="active">Favourite</a>
+            <a href="..\student 1\gallery.html">Gallery</a>
+            <a href="..\student 2\quiz.html">Quiz</a>
+            <a href="..\student 2\comment.html">Feedback</a>
+            <a href="..\student 3\productsPage.html">Store</a>
+            <a href="..\student 1\signup.html">SIGN UP</a>
+        </nav>
+    </div>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i><a href="..\student 3\aboutUs.html" class="fas fa-users" id="about-us"></a></i>
+    </div>
+    <form action="#" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+
+
+    <!--div popup to make items of the popup window-->
+    <div class="popup">
+      <div id="top-bar">
+        <p class="image-name"></p>
+
+        <button id="close-btn">X</button>
+        <button id="color-btn">&#x1f3a8;</button>
+        
+
+        
+      </div>
+
+      
+
+      <button class="arrow-btn arrow-right">&#10097;</button>
+      <button class="arrow-btn arrow-left">&#10096;</button>
+
+      <!--space for image of popup window-->
+      <div class="preview-box">
+        
+        <div id="songName">ADD your own</div>
+  
+      </div>
+    </div>
+
+    <div class="content">
+
+        <div class="landing">
+            
+            <p id="welcome-text">Welcome to <span id="melody">"Melody Heaven"</span>  <br> Your Personal Playlist Paradise! Edit and groove to your favourite beats.🎶🎧</p>
+
+            
+            <div class="welcome-image">
+                
+                <img src="images/welcome-image.jpg" alt="welcome-image" class="picture">
+
+                
+                
+                
+
+            </div>
+
+            <button id="play-now">Play Now</button>
+                    
+                
+            
+        </div>
+
+        <p id="add">You can make your own playlist here !</p>
+
+        <div class="list">
+
+
+
+            <div class="thumbnail">
+                <p class="song-name" id="1">Song Name 1</p>
+              </div>
+              <div class="thumbnail">
+                <p class="song-name" id="2">Song Name 2</p>
+              </div>
+              
+              <div class="thumbnail">
+                <p class="song-name" id="3">Song Name 3</p>
+              </div>
+            
+              <div class="thumbnail">
+                <p class="song-name" id="4">Song Name 4</p>
+              </div>
+              <div class="thumbnail">
+                <p class="song-name" id="5">Song Name 5</p>
+              </div>
+              
+              <div class="thumbnail">
+                <p class="song-name" id="6">Song Name 6</p>
+              </div>
+            
+              <div class="thumbnail">
+                <p class="song-name" id="7">Song Name 7</p>
+              </div>
+              <div class="thumbnail">
+                <p class="song-name" id="8">Song Name 8</p>
+              </div>
+              
+              <div class="thumbnail">
+                <p class="song-name" id="9">Song Name 29</p>
+              </div>
+            
+              <div class="thumbnail">
+                <p class="song-name" id="10">Song Name 10</p>
+              </div>
+              <div class="thumbnail">
+                <p class="song-name" id="11">Song Name 11</p>
+              </div>
+              
+              <div class="thumbnail">
+                <p class="song-name" id="12">Song Name 12</p>
+              </div>
+            
+              <div class="thumbnail">
+                <p class="song-name" id="13">Song Name 13</p>
+              </div>
+              <div class="thumbnail">
+                <p class="song-name" id="14">Song Name 14</p>
+              </div>
+              
+              <div class="thumbnail">
+                <p class="song-name" id="15" >Song Name 15</p>
+              </div>
+
+              <div class="thumbnail">
+                <p class="song-name" id="16">Song Name 16</p>
+              </div>
+              <div class="thumbnail">
+                <p class="song-name" id="17">Song Name 17</p>
+              </div>
+              
+              <div class="thumbnail">
+                <p class="song-name" id="18">Song Name 18</p>
+              </div>
+
+              <div class="thumbnail">
+                <p class="song-name" id="19">Song Name 19</p>
+              </div>
+              <div class="thumbnail">
+                <p class="song-name" id="20">Song Name 20</p>
+              </div>
+              
+              <div class="thumbnail">
+                <p class="song-name" id="21">Song Name 21</p>
+              </div>
+            
+              <div class="thumbnail">
+                <p class="song-name" id="22">Song Name 22</p>
+              </div>
+              <div class="thumbnail">
+                <p class="song-name" id="22">Song Name 23</p>
+              </div>
+              
+              <div class="thumbnail">
+                <p class="song-name" id="23">Song Name 24</p>
+              </div>
+            
+            
+            
+            
+        </div>
+        
+        
+    </div>
+
+
+
+    <div class="subscription-form">
+      <form id="subscriptionForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+    
+        <button type="submit" id="subscribeButton" disabled>Subscribe</button>
+      </form>
+    </div>
+
+
+    <footer>
+      <div class="foot">
+          <div class="box-container">
+              <div class="box">
+                  <h3>About us</h3>
+                  <p>
+                      Our mission is to provide a seamless and delightful experience for music enthusiasts to explore new sounds, genres, 
+                      and artists that resonate with their unique tastes.
+                  </p>
+              </div>
+              <div class="box">
+                  <h3>Our team</h3>
+                  <a href="../student 3/aboutUs.html">Sanuka</a>
+                  <a href="../student 3/aboutUs.html">Chulan</a>
+                  <a href="../student 3/aboutUs.html">Sarangi</a>
+                  <a href="../student 3/aboutUs.html">Tariq</a>
+              </div>
+          <div class="box">
+              <h3>Quick links</h3>
+              <a href="..\student 2\menu.html">Home</a>
+              <a href="..\student 4\web.html">Favourite</a>
+              <a href="..\student 1\gallery.html">Gallery</a>
+              <a href="..\student 2\quiz.html">Quiz</a>
+              <a href="..\student 2\comment.html">Feedback</a>
+              <a href="..\student 3\productsPage.html">Store</a>
+              <a href="..\student 3\aboutUs.html">About us</a>
+              </div>
+              <div class="box">
+                  <h3>Follow us on</h3>
+                  <a href="https://facebook.com">Facebook<i class="fab fa-facebook-square"></i></a>
+                  <a href="https://twitter.com/?lang=en">Twitter<i class="fab fa-twitter"></i></a>
+                  <a href="https://instagram.com/?lang=en">Instagram<i class="fab fa-instagram"></i></a>
+                  <a href="https://linkedin.com/?lang=en">Linkedin<i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+          <h1 class="credit">Created by <span><a href="">Sanuka Jayasinghe</a></span></h1>
+      </div>
+  </footer>
+    
+    
+    <script src="external.js"></script>
+    <script src="web.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,229 @@
+/*css for header*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500&family=Audiowide&family=Montserrat:wght@500&family=Oswald:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --archivo: 'Archivo', sans-serif;
+    --Audiowide: 'Audiowide', sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --dark-green-color: #559b04;
+    --white-color: #fff;
+    --black-color: rgb(0, 0, 0);
+    --orange-color: rgb(255, 165, 0);
+    --lightTransGrey-color: rgba(49, 47, 47, 0.8);
+}
+
+* {
+    font-family: var(--archivo), sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+/* css for navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--lightTransGrey-color);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: space-between;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+    padding: 2rem 9%;
+}
+
+header .logo {
+    display: block;
+    font-family: var(--Audiowide);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--orange-color);
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+}
+
+header .logo span {
+    font-family: var(--Audiowide);
+    color: var(--white-color);
+    letter-spacing: 0.1rem;
+}
+
+header .logo:hover {
+    color: var(--dark-green-color);
+}
+
+header .navbar a {
+    font-family: var(--Montserrat);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin: 1.8rem;
+}
+
+header .navbar a:hover {
+    color: var(--orange-color);
+}
+
+#active {
+    color: var(--orange-color);
+    text-decoration: overline;
+}
+
+header .icons:hover {
+    color: var(--orange-color);
+}
+
+#about-us {
+    color: var(--white-color);
+}
+
+header .icons i {
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+header .icons i:hover {
+    color: var(--orange-color);
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+header .search-bar-container label {
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 2.25rem;
+    margin-left: 2rem;
+}
+
+header .search-bar-container label:hover {
+    color: var(--orange-color);
+}
+
+#icon{
+    height: 8vh;
+}
+
+#menu-btn {
+    color: var(--white-color);
+    font-size: 3rem;
+    cursor: pointer;
+    border: 0.1rem solid var(--white-color);
+    padding: 0.3rem 0.5rem;
+    display: none;
+}
+
+section {
+    padding: 2rem 9%
+}
+
+/*css for footer*/
+.foot{
+    bottom: 0;
+}
+footer{
+    width: 100%;
+    background-color: var(--lightTransGrey-color);
+    backdrop-filter: blur(4px);
+    transition: all .3s ease;
+    z-index: 100;
+}
+
+footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+footer .box-container .box {
+    flex: 1 1 20rem;
+    padding: 0.5rem 0;
+    padding-left: 5rem;
+}
+
+footer .box-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: var(--white-color);
+    padding: 0.7rem 0;
+    margin-bottom: 1rem;
+}
+
+footer .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-transform: none;
+    padding: 0.7rem 0;
+    margin-right: 2rem;
+}
+
+footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-bottom: 1rem; 
+}
+
+footer .box-container .box i {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+
+footer .box-container .box a:hover {
+    color: var(--orange-color);
+    text-decoration: underline;
+}
+
+footer .credit {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: normal;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+footer .credit a {
+    color: var(--orange-color);
+    text-decoration: underline;
+}

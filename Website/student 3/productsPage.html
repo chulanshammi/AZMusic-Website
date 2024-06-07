@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Products Page</title>
+    <link rel="stylesheet" type="text/css" href="productsPage.css">
+    <link rel="icon" type="image/png" href="..\student 2\Images\vinyl.png">
+    <link rel="stylesheet" type="text/css" href="external.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="..\student 2\menu.html" class="logo">
+            <img src="..\student 2\Images\vinyl.png" alt="icon" id="icon">
+            <span>AZ</span>Music
+        </a>
+        <div class="menu-overlay">
+            <nav class="navbar">
+                <a href="..\student 2\menu.html">Home</a>
+                <a href="..\student 4\web.html">Favourite</a>
+                <a href="..\student 1\gallery.html">Gallery</a>
+                <a href="..\student 2\quiz.html">Quiz</a>
+                <a href="..\student 2\comment.html">Feedback</a>
+                <a href="..\student 3\productsPage.html" id="active">Store</a>
+                <a href="..\student 1\signup.html">SIGN UP</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i><a href="..\student 3\aboutUs.html" class="fas fa-users" id="about-us" id="active"></a></i>
+        </div>
+        <form action="#" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <div class="container">
+        <div class="fontButtonsContainer">
+            <button onclick="changeFontSize('increase')">+</button>
+            <button onclick="changeFontSize('reset')">N</button>
+            <button onclick="changeFontSize('decrease')">-</button>
+        </div>
+    </div>
+    <form onsubmit="return validateForm()">
+        <h2 class="detailStyle">Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="mobile_number">Mobile number:</label>
+        <input type="tel" id="mobile_number" name="mobile_number">
+        <br><br>
+        <label for="address">Delivery address:</label>
+        <input type="text" id="address" name="address">
+        <br><br>
+        <h2 class="detailStyle">Payment Details</h2>
+        <label for="cardName">Name on card</label>
+        <input type="text" id="cardName" name="cardName">
+        <br><br>
+        <label for="cardNumber">Number on card</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter the numbers without '-' or space">
+        <br><br>
+        <label for="expYear">Expiry Date</label>
+        <input type="text" id="expYear" name="expYear" placeholder="YYYY/MM">
+        <br><br>
+        <label for="addressOptional">Another delivery address (If required)</label>
+        <input type="text" id="addressOptional" name="addressOptional">
+        <br><br>
+
+        <h2 class="storeStyle">Store</h2>
+        
+        <div class="store-items">
+    <div class="product">
+        <div class="brickOverlay">
+            <div class="imageTitle">Pure Active Noise Cancelling (Pure ANC) actively blocks external noise
+                Real-time audio calibration preserves a premium listening experience
+                Up to 22 hours of battery life enables fully featured all-day wireless playback
+                Apple W1 chip for Class 1 Wireless Bluetooth connectivity and battery efficiency
+                With Fast Fuel, a 10-minute charge gives 3 hours of play when battery is low
+                Pure ANC-off for low-power mode provides up to 40 hours of battery life
+                Take calls, control music and activate Siri with multifunction on-ear controls
+                Soft over-ear cushions for extended comfort and added noise isolation
+                </div>
+            
+        </div>
+        <img src="images/speaker.jpg" alt=""class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">Marshall Middleton Blutooth Speaker</h1>
+            <h2 class="productPrice">$250</h2>
+            <label class="noProducts" for="quantity1">Number Of Products:</label>
+            <input type="number" id="quantity1" name="quantity1" value="0">
+            <br>
+        </div>
+    </div>
+    <div class="product">
+        <div class="brickOverlay">
+            <div class="imageTitle">Inspired by the legendary SM7B, the MV7 is a dynamic microphone with both USB and XLR outputs for
+                 use with computers and professional interfaces alike. Connect via USB and explore additional set-up features and 
+                 Auto Level Mode within our ShurePlus™ MOTIV app, to control your vocal tone, and distance from the microphone. 
+                 With Auto Level Mode, you can let the microphone do the work for you.</div>
+            
+        </div>
+        <img src="images/mic.jpg" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">SHURE MV7 Podcast Microphone</h1>
+            <h2 class="productPrice">$230</h2>
+            <label class="noProducts" for="quantity2">Number Of Products:</label>
+            <input type="number" id="quantity2" name="quantity2" value="0">
+            <br>
+        </div>
+    </div>
+    <div class="product">
+        <div class="brickOverlay">
+            <div class="imageTitle">Standard Shape Tortex Guitar Picks .60mm Gauge - Orange (12-pack)</div>
+            
+        </div>
+        <img src="images/picks.jpg" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">Dunlop Tortex Standard Guitar Picks </h1>
+            <h2 class="productPrice">$20</h2>
+            <label class="noProducts" for="quantity3">Number Of Products:</label>
+            <input type="number" id="quantity3" name="quantity3" value="0">
+            <br>
+        </div>
+    </div>
+    
+    <div class="product">
+        <div class="brickOverlay">
+            <div class="imageTitle">25-Key Gen 2 MPK Mini dynamic keybed, OLED Display, 8 Velocity sensitive backlit MPC drum pads,
+                 arpeggiator and note repeat, plus 4 encoder knobs deliver a professional, versatile performance</div>
+            
+        </div>
+        <img src="images/midi.jpg" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">MPK Midi Keyboard</h1>
+            <h2 class="productPrice">$300</h2>
+            <label class="noProducts" for="quantity4">Number Of Products:</label>
+            <input type="number" id="quantity4" name="quantity4" value="0">
+            <br>
+        </div>
+    </div>
+    <div class="product">
+        <div class="brickOverlay">
+            <div class="imageTitle">6 pockets on the bag’s exterior provide convenient storage space for sheet music, strings, tuners,
+                 picks and other accessories.Secret zipper pocket hiding under the handle for valuable personal belongings.
+                  Two organizers inside the front pocket can be used for smartphone and tablet.</div>
+
+            </div>
+        <img src="images/guitar.jpg" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">CAHAYA Classical and Accoustic Guitar Case</h1>
+            <h2 class="productPrice">$75</h2>
+            <label class="noProducts" for="quantity5">Number Of Products:</label>
+            <input type="number" id="quantity5" name="quantity5" value="0">
+            <br>
+        </div>
+    </div>
+    <div class="product">
+        <div class="brickOverlay">
+            <div class="imageTitle">Adjustable Music Stand with EZ Height Adjustment Grip, Stackable Leg Design, 
+                and Quick Release Mechanism</div>
+            
+        </div>
+        <img src="images/mstand.jpg" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">Hercules Symphony Stand</h1>
+            <h2 class="productPrice">$55</h2>
+            <label class="noProducts" for="quantity6">Number Of Products:</label>
+            <input type="number" id="quantity6" name="quantity6" value="0">
+            <br>
+        </div>
+    </div>
+</div>
+    
+    <button type="button" onclick="calculateTotal()">Total Price</button>
+       
+    <br><br>
+    <div id="total"></div>
+
+    <br><br>
+    <input type="button" value="Place Order" onclick="showOrderSummary()">
+
+    </form>
+    <footer>
+        <div class="foot">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>
+                        Our mission is to provide a seamless and delightful experience for music enthusiasts to explore new sounds, genres, 
+                        and artists that resonate with their unique tastes.
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Our team</h3>
+                    <a href="../student 3/aboutUs.html">Sanuka</a>
+                    <a href="../student 3/aboutUs.html">Chulan</a>
+                    <a href="../student 3/aboutUs.html">Sarangi</a>
+                    <a href="../student 3/aboutUs.html">Tariq</a>
+                </div>
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="..\student 2\menu.html">Home</a>
+                    <a href="..\student 4\web.html">Favourite</a>
+                    <a href="..\student 1\gallery.html">Gallery</a>
+                    <a href="..\student 2\quiz.html">Quiz</a>
+                    <a href="..\student 2\comment.html">Feedback</a>
+                    <a href="..\student 3\productsPage.html">Store</a>
+                    <a href="..\student 3\aboutUs.html">About us</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us on</h3>
+                    <a href="https://facebook.com">Facebook<i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/?lang=en">Twitter<i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/?lang=en">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/?lang=en">Linkedin<i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <h1 class="credit">Created by <span><a href="editors.html">Sarangi Perera</a></span></h1>
+        </div>
+    </footer>
+    <script src="productsPage.js"></script>
+    <script src="external.js"></script>
+</body>
+
+</html>

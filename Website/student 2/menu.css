@@ -1,0 +1,63 @@
+html {
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image:  url(Images/15245884_SL_123119_26540_06.jpg);
+    background-size: cover;
+    background-position: initial;
+    position: relative;  
+}
+
+main{
+    font-size: 2.5em;
+    color: white;
+    padding: 20vh;
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-holder{
+    height: 70vh;
+    width: 150vh;
+    background: #312f2fcc;
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+}
+
+.image{
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#slideshow{
+    border-radius: 15px;
+    height: 50vh;
+    width: 50vh;
+}
+
+.logo1 {
+    padding-bottom: 3vh;
+    color: #ffa500;
+}
+
+.logo1 span {
+    color: white;
+}
+
+.names{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 5vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-align: center;
+}

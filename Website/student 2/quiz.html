@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Music - Quiz</title>
+    <link rel="icon" type="image/png" href="..\student 2\Images/vinyl.png">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="external.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body onload="NextQuestion(0)">
+    <header>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="menu.html" class="logo">
+            <img src="..\student 2\Images/vinyl.png" alt="icon" id="icon">
+            <span>AZ</span>Music
+        </a>
+        <div class="menu-overlay">
+            <nav class="navbar">
+                <a href="..\student 2\menu.html">Home</a>
+                    <a href="..\student 4\web.html">Favourite</a>
+                    <a href="..\student 1\gallery.html">Gallery</a>
+                    <a href="..\student 2\quiz.html" id="active">Quiz</a>
+                    <a href="..\student 2\comment.html">Feedback</a>
+                    <a href="..\student 3\productsPage.html">Store</a>
+                    <a href="..\student 1\signup.html">SIGN UP</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i><a href="..\student 3\aboutUs.html" class="fas fa-users" id="about-us"></a></i>
+        </div>
+        <form action="#" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <main>
+        <div class="modal-container" id="score-modal">
+            <div class="modal-content-container">
+                <h1>Quiz Completed.</h1>
+    
+                <div class="grade-details">
+                    <p>Attempts : 5</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span></p>
+                    <p><span id="remarks"></span></p>
+                </div>
+    
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="quiz-container">
+            
+            <div class="details-container">
+                <h1>Score : <span id="player-score"></span>/5</h1>
+                <h1>Question : <span id="question-number"></span>/5</h1>
+            </div>
+            <div class="question-container">
+                <h1 id="display-question"></h1>
+            </div>
+        
+            <div class="option-container">
+    
+                <div class="modal-container" id="option-modal">
+    
+                    <div class="modal-content-container">
+                        <h1>Please Pick An Option</h1>
+    
+                        <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+    
+                    </div>
+                </div>
+            <span>
+                <input type="radio" id="option-one" name="option" class="radio" value="optionA">
+                <label for="option-one" class="option" id="option-one-label"></label>
+            </span>
+        
+            <span>
+                <input type="radio" id="option-two" name="option" class="radio" value="optionB">
+                <label for="option-two" class="option" id="option-two-label"></label>
+            </span>
+    
+            <span>
+                <input type="radio" id="option-three" name="option" class="radio" value="optionC">
+                <label for="option-three" class="option" id="option-three-label"></label>
+            </span>
+    
+            <span>
+                <input type="radio" id="option-four" name="option" class="radio" value="optionD">
+                <label for="option-four" class="option" id="option-four-label"></label>
+            </span>
+        </div>
+    
+        <div class="next-button-container">
+            <button onclick="handleNextQuestion()">Next Question</button>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>
+                        Our mission is to provide a seamless and delightful experience for music enthusiasts to explore new sounds, genres, 
+                        and artists that resonate with their unique tastes.
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Our team</h3>
+                    <a href="../student 3/aboutUs.html">Sanuka</a>
+                    <a href="../student 3/aboutUs.html">Chulan</a>
+                    <a href="../student 3/aboutUs.html">Sarangi</a>
+                    <a href="../student 3/aboutUs.html">Tariq</a>
+                </div>
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="..\student 2\menu.html">Home</a>
+                    <a href="..\student 4\web.html">Favourite</a>
+                    <a href="..\student 1\gallery.html">Gallery</a>
+                    <a href="..\student 2\quiz.html">Quiz</a>
+                    <a href="..\student 2\comment.html">Feedback</a>
+                    <a href="..\student 3\productsPage.html">Store</a>
+                    <a href="..\student 3\aboutUs.html">About us</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us on</h3>
+                    <a href="https://facebook.com">Facebook<i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/?lang=en">Twitter<i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/?lang=en">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/?lang=en">Linkedin<i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <h1 class="credit">Created by <span><a href="pageEditor.html">Chulan Shammika</a></span></h1>
+        </div>
+    </footer>
+    <script src="quiz.js"></script>
+    <script src="external.js"></script>   
+</body>
+
+</html>

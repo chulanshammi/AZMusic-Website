@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Music - Feedback</title>
+    <link rel="icon" type="image/png" href="..\student 2\Images/vinyl.png">
+    <link rel="stylesheet" href="comment.css">
+    <link rel="stylesheet" href="external.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="menu.html" class="logo">
+            <img src="..\student 2\Images/vinyl.png" alt="icon" id="icon">
+            <span>AZ</span>Music
+        </a>
+        <div class="menu-overlay">
+            <nav class="navbar">
+                <a href="..\student 2\menu.html">Home</a>
+                <a href="..\student 4\web.html">Favourite</a>
+                <a href="..\student 1\gallery.html">Gallery</a>
+                <a href="..\student 2\quiz.html">Quiz</a>
+                <a href="..\student 2\comment.html" id="active">Feedback</a>
+                <a href="..\student 3\productsPage.html">Store</a>
+                <a href="..\student 1\signup.html">Sign Up</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i><a href="..\student 3\aboutUs.html" class="fas fa-users" id="about-us"></a></i>
+        </div>
+        <form action="#" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!--Feedback form-->
+    <div class="container">
+        <h1 class="logo1"><span>Feedback</span>Form</h1>
+        <div class="wrapper">
+            <div class="our-info">
+                <h2>Our Info</h2>
+                <ul>
+                    <li>Phone: 0716212422,
+                        0775467833,
+                        0331283948,
+                        0785367893
+                    </li>
+                    <li>Email: tariq.ramzeen@gmail.com,
+                        chulan.shammika@gmail.com,
+                        sanuka.jayasinghe@gmail.com,
+                        sarangi.perera@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="feedback">
+            <h2>Give us your valuble feedback</h2>
+            <form>
+                <p>
+                    <label>Full Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your full name">
+                </p>
+                <p>
+                    <label>Phone Number: </label>
+                    <input type="tel" name="Phone" id="Phone" placeholder="Enter your Phone number">
+                </p>
+                <p>
+                    <label>E-mail Address: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </p>
+                <p>
+                    Select your gender:<br>
+                    <input type="radio" name="gender" id="Male" value="Male">
+                    <label>Male</label>
+                    <input type="radio" name="gender" id="Female" value="Female">
+                    <label>Female</label>
+                    <input type="radio" name="gender" id="Unspecified" value="Unspecified">
+                    <label>Unspecified</label>
+                </p>
+                <div class="rating">
+                    <p class="text">Express your experience of our website with an emoji</p>
+                    <div class="emoji">
+                        <div>🤬</div>
+                        <div>😠</div>
+                        <div>😖</div>
+                        <div>😐</div>
+                        <div>🙂</div>
+                        <div>😄</div>
+                        <div>😍</div>
+                    </div>
+                </div>
+                <div class="query">
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" id="feedback" rows="8" placeholder="Enter your feedback"></textarea>
+                    <p class="full"><button id="submit-btn">Submit</button></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="alert" id="popup">
+        <p><strong>Thank You!</strong> we appreciate your feedback 🤗</p>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>
+                        Our mission is to provide a seamless and delightful experience for music enthusiasts to explore new sounds, genres, 
+                        and artists that resonate with their unique tastes.
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Our team</h3>
+                    <a href="../student 3/aboutUs.html">Sanuka</a>
+                    <a href="../student 3/aboutUs.html">Chulan</a>
+                    <a href="../student 3/aboutUs.html">Sarangi</a>
+                    <a href="../student 3/aboutUs.html">Tariq</a>
+                </div>
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="..\student 2\menu.html">Home</a>
+                    <a href="..\student 4\web.html">Favourite</a>
+                    <a href="..\student 1\gallery.html">Gallery</a>
+                    <a href="..\student 2\quiz.html">Quiz</a>
+                    <a href="..\student 2\comment.html">Feedback</a>
+                    <a href="..\student 3\productsPage.html">Store</a>
+                    <a href="..\student 3\aboutUs.html">About us</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us on</h3>
+                    <a href="https://facebook.com">Facebook<i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/?lang=en">Twitter<i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/?lang=en">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/?lang=en">Linkedin<i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <h1 class="credit">Created by <span><a href="pageEditor.html">Chulan Shammika</a></span></h1>
+        </div>
+    </footer>
+    <script src="comment.js"></script>
+    <script src="external.js"></script>
+</body>
+</html>

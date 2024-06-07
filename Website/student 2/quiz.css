@@ -1,0 +1,215 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100%;
+    background-image:  url(Images/15245884_SL_123119_26540_06.jpg);
+    background-size: cover;
+    background-position: initial;
+    position: relative;  
+    
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container{
+    width: 40rem;
+    height: 30rem;
+    background-color: rgba(49, 47, 47, 0.8);
+    backdrop-filter: blur(4px);
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+}
+
+.details-container{
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details-container h1{
+    font-size: 1.2rem;
+    text-transform: none;
+}
+
+.question-container{
+    padding-bottom: 2vh;
+}
+
+.quiz-container{
+    width: 60%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 10px;
+    border-radius: 25px;
+}
+
+.quiz-container h1{
+    color: rgb(255, 255, 255);
+    font-size: large;
+    text-align: center;
+    padding: 3px;
+}
+
+.option-container{
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.option-container span{
+    width: 45%;
+    height: 4rem;
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+span label{
+    width: 100%;
+    height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+
+span label:hover{
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+    color: white;
+}
+
+input[type="radio"]{
+    position: relative;
+    display: none;
+}
+
+input[type="radio"]:checked~ .option{
+    background:rgb(255, 165, 0, 0.8);
+}
+
+.next-button-container{
+    width: 50%;
+    height: 3rem;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.next-button-container button{
+    width: 16rem;
+    height: 6rem;
+    border-radius: 50px;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size:  1.2rem;
+    border: 2px solid darkgreen;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.next-button-container button:hover{
+    background-color: rgb(8, 154, 120);
+}
+
+.modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.modal-content-container{
+    height: 40rem;
+    width: 30rem;
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.modal-content-container h1{
+    font-size: 1.7rem;
+    height: 3.2rem;
+    color: lightgray;
+    text-align: center;
+}
+
+.grade-details{
+    font-size: 1.4rem;
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grade-details p{
+    color: white;
+    text-align: center;
+}
+
+.modal-button-container{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-button-container button{
+    width: 10rem;
+    height: 2rem;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(252, 242, 241);
+    color:white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.modal-button-container button:hover{
+    background-color:rgb(83, 82, 82);
+}

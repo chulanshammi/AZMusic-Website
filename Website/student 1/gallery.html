@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="..\student 2\Images\vinyl.png">
+    <link rel="stylesheet" href="external.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>AZ Music - Gallery</title>
+    <style>
+        body{
+            background-image: url(images/15245884_SL_123119_26540_06.jpg);
+            background-size: cover;
+        }
+        .formBox{
+            display: flex;
+            position: relative;
+            padding: 80px;
+            width: 900px;
+            height: 620px;
+            background: rgba(49, 47, 47, 0.8);
+            justify-content: center;
+            border: 2px solid white;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+            position: relative;
+            top: 20px;
+            left: 350px;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: cursive;
+            font-size: 50px;
+            position: relative;
+            bottom: 50px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .picture-container {
+            margin: 10px;
+            transition: transform 0.3s;
+    
+        }
+
+        .picture-container img {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .picture-container:hover {
+            transform: scale(1.2); /* Enlarge the picture on hover */
+        }
+
+        .top{
+            padding-top: 20vh;
+            padding-bottom: 10vh;
+            padding-left: 15vh;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="menu.html" class="logo">
+            <img src="..\student 2\Images/vinyl.png" alt="icon" id="icon">
+            <span>AZ</span>Music
+        </a>
+        <div class="menu-overlay">
+            <nav class="navbar">
+                <a href="..\student 2\menu.html">Home</a>
+                <a href="..\student 4\web.html">Favourite</a>
+                <a href="..\student 1\gallery.html" id="active">Gallery</a>
+                <a href="..\student 2\quiz.html">Quiz</a>
+                <a href="..\student 2\comment.html">Feedback</a>
+                <a href="..\student 3\productsPage.html">Store</a>
+                <a href="..\student 1\signup.html">SIGN UP</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i><a href="..\student 3\aboutUs.html" class="fas fa-users" id="about-us"></a></i>
+        </div>
+        <form action="#" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <div class="top">
+    <div class="formBox">
+        <div class="formContainer">
+            <h2>Music Gallery</h2>
+            <div class="row">
+                <a href="https://www.youtube.com/watch?v=a8GMt7v0mYw&list=PLtZC5Fw8dg70HkBooHYKZW42Zf5PmfeAR&index=1">
+                    <div class="picture-container">
+                        <img src="images/img1.png" alt="Image 1" title="Ed Sheeren">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=JH398xAYpZA&list=PLPRWtKgY2MOu8dPE7sMxQZ07PS1mLqid9">
+                    <div class="picture-container">
+                        <img src="images/img2.jpg" alt="Image 2" title="The Weeknd">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=JKPp3Kshb7c&list=PLDNtAuXIhbEOkqGHXzjWh8sLnnhFRSxl_">
+                    <div class="picture-container">
+                        <img src="images/img3.png" alt="Image 3" title="Justin Bieber">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=ZS1DLWkKUCE&list=PLJ7fmOsb_m-jYrA0cYEiwKsiALdTMhwnv">
+                    <div class="picture-container">
+                        <img src="images/img4.jpg" alt="Image 4" title="Niall Horan">
+                    </div>
+                </a>
+            </div><br>
+            <div class="row">
+                <a href="https://www.youtube.com/watch?v=9xE0x05Xuuk&list=PLOkPWZS9Q7ECOreiaeGJZ_dA8KlCtsvHN">
+                    <div class="picture-container">
+                        <img src="images/img5.jpg" alt="Image 5" title="Arctic Monkeys">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=p1cEvNn88jM&list=PLkqz3S84Tw-RdM_IQwtQrYJpkOmJH2Ngw">
+                    <div class="picture-container">
+                        <img src="images/img6.jpg" alt="Image 6" title="Taylor Swift">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=u09k1EdDmlY&list=PLaBDahRlkpKSNmGTkWZDHYmNf3OX6Ou5K&index=2">
+                    <div class="picture-container">
+                        <img src="images/img7.png" alt="Image 7" title="bruno Mars">
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=9MogWz-LHXI&list=PLT5kE8dBKiP5Bg6aW98Bx52GInI7iJL_h">
+                    <div class="picture-container">
+                        <img src="images/img8.png" alt="Image 8" title="Ariana Grande">
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="foot">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>
+                        Our mission is to provide a seamless and delightful experience for music enthusiasts to explore new sounds, genres, 
+                        and artists that resonate with their unique tastes.
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Our team</h3>
+                    <a href="../student 3/aboutUs.html">Sanuka</a>
+                    <a href="../student 3/aboutUs.html">Chulan</a>
+                    <a href="../student 3/aboutUs.html">Sarangi</a>
+                    <a href="../student 3/aboutUs.html">Tariq</a>
+                </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="..\student 2\menu.html">Home</a>
+                <a href="..\student 4\web.html">Favourite</a>
+                <a href="..\student 1\gallery.html">Gallery</a>
+                <a href="..\student 2\quiz.html">Quiz</a>
+                <a href="..\student 2\comment.html">Feedback</a>
+                <a href="..\student 3\productsPage.html">Store</a>
+                <a href="..\student 3\aboutUs.html">About us</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us on</h3>
+                    <a href="https://facebook.com">Facebook<i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/?lang=en">Twitter<i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/?lang=en">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/?lang=en">Linkedin<i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <h1 class="credit">Created by <span><a href="#">Tariq Ramzeen</a></span></h1>
+        </div>
+    </footer>
+    <script src="external.js"></script>
+</body>
+</html>

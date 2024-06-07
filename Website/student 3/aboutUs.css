@@ -1,0 +1,104 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-image:  url(Images/15245884_SL_123119_26540_06.jpg);
+    background-size: cover;
+    background-position: relative;
+}
+
+.heading {
+    padding-top: 28vh;
+    position: absolute; 
+    top: 5%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 50px;
+}
+h2{
+    padding-top: 20vh;
+    position: absolute; 
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: medium;
+
+}
+
+.members{
+    padding-left: 15vh;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+
+}
+
+.container{
+    margin: 50px;
+}
+
+.pics{
+    display: flex;
+    height: 300px;
+    margin: 25px;
+    box-shadow: 5px 5px 20px white;
+    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    background: whitesmoke;
+}
+
+.students{
+    height: 250px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.intro{
+    height: 40px;
+    width: 200px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 30px;
+    background: black;
+    color: white;
+    transition: .5s;
+}
+
+.letters{
+    font-size:medium;
+    text-align: center;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.pics:hover{
+    cursor: pointer;
+}
+
+.pics:hover .intro{
+    height: 150px;
+    bottom: 100px;
+    background: black(150, 18, 18);
+}
+
+.pics:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.pics:hover img{
+    transform: scale(1.1)rotate(-3deg);
+}
+
+.top{
+    display: flex;
+    padding-top: 20vh;
+}

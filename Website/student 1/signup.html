@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="..\student 2\Images/vinyl.png">
+    <link rel="stylesheet" href="external.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>AZ Music - Sign Up</title>
+    <style>
+        body{
+            /* Internal CSS*/
+            background-image: url(images/15245884_SL_123119_26540_06.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: fixed;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            position: relative;
+            color: black;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            left: 5px;
+        }
+        .topHeader{
+            font-size: 30px;
+            position: relative;
+            left: 15px;
+            bottom: 160px;
+            font-family: Comic Sans MS;
+            color:bisque;
+        }
+        .formBox{
+            display: flex;
+            position: relative;
+            padding: 80px;
+            width: 400px;
+            height: 490px;
+            background: rgba(49, 47, 47, 0.8);
+            justify-content: center;
+            border: 2px solid white;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+            position: relative;
+            top: 20px;
+        }
+        .formContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .labels{
+            position: relative;
+            bottom: 120px;
+            color:white;
+            font-family: cursive;
+            font-size: 15px;
+        }
+        .inputText{
+            height: 40px;
+            width: 100%;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            padding: 0 0 0 20px;
+            opacity: 90%;
+            color: black;
+            position: relative;
+            bottom: 100px;
+        }
+        .radio{
+            position: relative;
+            bottom: 100px;
+            left: 30px;
+            color:aquamarine;
+        }
+        ::-webkit-input-placeholder{
+            color: rgb(49, 48, 48);
+        }
+        #submitButton{
+            height: 40px;
+            width: 100%;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            color: white;
+            font-family: Comic Sans MS;
+            background-color: orange;
+            position: relative;
+            bottom: 90px;
+        }
+
+        .top{
+            padding-top: 25vh;
+            padding-bottom: 10vh;
+            padding-left: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="menu.html" class="logo">
+            <img src="..\student 2\Images/vinyl.png" alt="icon" id="icon">
+            <span>AZ</span>Music
+        </a>
+        <div class="menu-overlay">
+            <nav class="navbar">
+                <a href="..\student 2\menu.html">Home</a>
+                <a href="..\student 4\web.html">Favourite</a>
+                <a href="..\student 1\gallery.html">Gallery</a>
+                <a href="..\student 2\quiz.html">Quiz</a>
+                <a href="..\student 2\comment.html">Feedback</a>
+                <a href="..\student 3\productsPage.html">Store</a>
+                <a href="..\student 1\signup.html" id="active">SIGN UP</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i><a href="..\student 3\aboutUs.html" class="fas fa-users" id="about-us"></a></i>
+        </div>
+        <form action="#" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <div class="top">
+    <div class="formBox">
+        <div class="formContainer">
+            <div class="topHeader">
+                <h1>Sign Up</h1>
+            </div>
+            <form action="">
+                <label for="name" class="labels">Name:</label>
+                    <input type="text" class="inputText" id="name" name="name" placeholder="Name...">
+                    <br><br><br>
+                    <label for="name" class="labels">Age:</label>
+                    <input type="number" class="inputText" id="age" name="age" placeholder="Age...">
+                    <br><br><br>
+                    <label for="name" class="labels">Gender:</label>
+                    <input type="radio" class="radio" id="male" name="gender" value="male">
+                    <label for="male" class="radio">Male</label>
+                    <input type="radio" class="radio" id="female" name="gender" value="female">
+                    <label for="female" class="radio">Female</label>
+                    <br><br><br>
+                    <label for="name" class="labels">Occupation:</label>
+                    <input type="text" class="inputText" id="occupation" name="occupation" placeholder="Occupation...">
+                    <br><br><br>
+                    <label for="name" class="labels">Email:</label>
+                    <input type="email" class="inputText" id="email" name="email" placeholder="Email...">
+                    <br><br><br>
+                    <button type="submit" id="submitButton">Sign Up</button>
+            </form><br>
+            <script src="validation.js"></script>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>
+                        Our mission is to provide a seamless and delightful experience for music enthusiasts to explore new sounds, genres, 
+                        and artists that resonate with their unique tastes.
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Our team</h3>
+                    <a href="../student 3/aboutUs.html">Sanuka</a>
+                    <a href="../student 3/aboutUs.html">Chulan</a>
+                    <a href="../student 3/aboutUs.html">Sarangi</a>
+                    <a href="../student 3/aboutUs.html">Tariq</a>
+                </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="..\student 2\menu.html">Home</a>
+                <a href="..\student 4\web.html">Favourite</a>
+                <a href="..\student 1\gallery.html">Gallery</a>
+                <a href="..\student 2\quiz.html">Quiz</a>
+                <a href="..\student 2\comment.html">Feedback</a>
+                <a href="..\student 3\productsPage.html">Store</a>
+                <a href="..\student 3\aboutUs.html">About us</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us on</h3>
+                    <a href="https://facebook.com">Facebook<i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/?lang=en">Twitter<i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/?lang=en">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/?lang=en">Linkedin<i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <h1 class="credit">Created by <span><a href="#">Tariq Ramzeen</a></span></h1>
+        </div>
+    </footer>
+    <script src="external.js"></script>
+</body>
+</html>
